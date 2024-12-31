@@ -1,0 +1,91 @@
+:root {
+    --dark: #1a1a1a;
+    --dark2: #242424;
+    --white: #fff;
+    --light: #cccccc;
+    --yellow: #fbcb07;
+}
+
+@media screen and (min-width: 992px) {
+    main {
+
+        >header {
+
+            div {
+
+                &:first-of-type {
+
+                    >form {
+                        display: flex;
+                        margin-right: 40px;
+                        width: 380px;
+                        height: 47px;
+                        border-radius: 35px;
+                        overflow: hidden;
+                        background-color: var(--dark2);
+
+                        >input {
+                            width: 85%;
+                            background-color: inherit;
+                            border: none;
+                            outline: none;
+                            padding-right: 17px;
+                            font-size: 16px;
+                            color: var(--white);
+
+                            &:focus {
+                                background-color: #383838;
+                            }
+                        }
+
+                        >span {
+                            width: 15%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                >i {
+                                    color: var(--white);
+                                }
+                            }
+
+                            >i {
+                                font-size: 25px;
+                                margin-top: 5px;
+                                color: var(--light);
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    >span,
+                    >i {
+                        display: none;
+                    }
+
+                    >a {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 20px;
+                        background-color: var(--white);
+                        color: var(--dark2);
+                        padding: 3px 14px;
+                        border-radius: 25px;
+
+                        &:hover {
+                            color: #919191;
+                        }
+
+                        >i {
+                            font-size: 20px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
